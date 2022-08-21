@@ -4,6 +4,7 @@ require './lib/pirate'
 RSpec.describe Pirate do
   it 'has a name' do
     pirate = Pirate.new('Jane')
+    require 'pry'; binding.pry
     expect(pirate.name).to eq('Jane')
   end
 
